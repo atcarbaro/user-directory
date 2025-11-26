@@ -45,5 +45,3 @@ export const SearchBar = memo<SearchBarProps>(({
     </div>
   );
 });
-
-SearchBar.displayName = 'SearchBar';
