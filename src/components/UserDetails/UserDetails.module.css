@@ -1,0 +1,52 @@
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+}
+
+.detailsContainer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #DBE4EE;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: slideDown 0.3s ease-out;
+  overflow: hidden;
+}
+
+.detailRow {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #054A91;
+  min-width: 80px;
+}
+
+.detailLink {
+  color: #3E7CB1;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.3s ease;
+}
+
+.detailLink:hover {
+  text-decoration: underline;
+  color: #054A91;
+}
+
+.detailsContainer span:not(.detailLabel) {
+  color: #054A91;
+}
